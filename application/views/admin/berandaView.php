@@ -7,7 +7,7 @@
           <h6 class="m-0 font-weight-bold text-primary"></h6>
      </div>
      <div class="card-body">
-          <img src="<?= templates('production/images/Dashboard.jpg') ?>" alt="Image" height="750" width="1040">
+          <img src="<?= templates('production/images/latar.jpg') ?>" alt="Image" height="750" width="1040">
      </div>
 
 </div>
