@@ -1,5 +1,6 @@
 <?= content_open($title) ?>
-<a href="<?= site_url($url . '/export/pd') ?>" class="btn btn-danger" target="_BLANK"><i class="fa fa-file-pdf-o"></i> Unduh Data</a>
+<a href="<?= site_url($url . '/export/pdf') ?>" class="btn btn-danger" target="_BLANK"><i class="fa fa-file-pdf-o"></i> Unduh Data</a>
+
 <hr>
 <?= $this->session->flashdata('info') ?>
 <table class="table table-bordered">
@@ -13,7 +14,6 @@
             <th>Jenis KB</th>
             <th>Jenis RT</th>
             <th width="200px">Jenis KS</th>
-
 
         </tr>
 

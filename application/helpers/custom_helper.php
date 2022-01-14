@@ -4,7 +4,7 @@ use Dompdf\Dompdf;
 
 function generatePdf($html = '', $filename = 'document', $size = 'A4', $orientation = 'portrait', $attachment = false)
 {
-  $dompdf = new Dompdf();
+  $dompdf = new dompdf('third');
   $dompdf->loadHtml($html);
 
   // (Optional) Setup the paper size and orientation
