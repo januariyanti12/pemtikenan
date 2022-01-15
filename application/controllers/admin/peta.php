@@ -14,6 +14,7 @@ class Peta extends CI_Controller
         $datacontent['url'] = 'peta';
         $datacontent['title'] = 'Keluarga Sejahtera Kel.Desa Kapur';
         // $datacontent['datatable'] = $this->Model->get_all_data();
+        $datacontent['peta'] = $this->Model->get_peta()->result_array();
         $data['content'] = $this->load->view('admin/peta_sebaran/petasebaranView', $datacontent, TRUE);
         $data['js'] = $this->load->view('admin/leafletstandar/js/mapJs', $datacontent, TRUE);
         $data['title'] = $datacontent['title'];

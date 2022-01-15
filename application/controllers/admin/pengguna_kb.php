@@ -6,6 +6,7 @@ class Pengguna_kb extends CI_Controller
 
     public function __construct()
     {
+        //Pengguna
         parent::__construct();
         if ($this->session->logged !== true) {
             redirect('admin/auth');

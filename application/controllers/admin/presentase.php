@@ -6,6 +6,7 @@ class Presentase extends CI_Controller
 
     public function __construct()
     {
+        //Presen
         parent::__construct();
         if ($this->session->logged !== true) {
             redirect('admin/auth');

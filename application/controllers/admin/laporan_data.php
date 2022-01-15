@@ -6,6 +6,7 @@ class Laporan_data extends CI_Controller
 
     public function __construct()
     {
+        // Laporan
         parent::__construct();
         if ($this->session->logged !== true) {
             redirect('admin/auth');
