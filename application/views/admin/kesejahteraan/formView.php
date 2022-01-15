@@ -3,6 +3,7 @@ $id_penduduk = "";
 $nomor_kk = "";
 $nik = "";
 $jenis_kelamin = "";
+$tanggal_lahir = "";
 $nama_kb = "";
 $rt_rw = "";
 $nama_ks = "";
@@ -64,28 +65,40 @@ if ($this->session->flashdata('error_validation')) {
 		</div>
 	</div>
 	<div class="form-group">
-		<label>Jenis KB</label>
+		<label>Tanggal Lahir</label>
 		<div class="row">
 			<div class="col-md-3">
-				<?= input_text('nama_kb', $nama_kb) ?>
+				<?= input_text('tanggal_lahir', $tanggal_lahir) ?>
 			</div>
 		</div>
+	</div>
+	<div class="form-group">
+		<label>Jenis KB</label>
+		<select name="id_jenis_kb">
+
+			<?php foreach ($jenis_kb as $l) : ?>
+				<option value="<?= $l['id_jenis_kb']; ?>"><?= $l['nama_kb']; ?></option>
+			<?php endforeach; ?>
+
+		</select>
 	</div>
 	<div class="form-group">
 		<label>Jenis RT</label>
-		<div class="row">
-			<div class="col-md-3">
-				<?= input_text('rt_rw', $rt_rw) ?>
-			</div>
-		</div>
+		<select name="id_jenis_rt">
+
+			<?php foreach ($jenis_rt as $l) : ?>
+				<option value="<?= $l['id_jenis_rt']; ?>"><?= $l['rt_rw']; ?></option>
+			<?php endforeach; ?>
+		</select>
 	</div>
 	<div class="form-group">
 		<label>Jenis KS</label>
-		<div class="row">
-			<div class="col-md-3">
-				<?= input_text('nama_ks', $nama_ks) ?>
-			</div>
-		</div>
+		<select name="id_jenis_ks">
+
+			<?php foreach ($jenis_ks as $l) : ?>
+				<option value="<?= $l['id_jenis_ks']; ?>"><?= $l['nama_ks']; ?></option>
+			<?php endforeach; ?>
+		</select>
 	</div>
 	<div class="form-group">
 		<button type="submit" name="simpan" value="true" class="btn btn-info"><i class="fa fa-save"></i> Simpan</button>

@@ -10,6 +10,7 @@
 			<th>Nik</th>
 			<th>Nama</th>
 			<th>Jenis Kelamin</th>
+			<th>Tanggal Lahir</th>
 			<th>Jenis KB</th>
 			<th>Jenis RT</th>
 			<th>Jenis KS</th>
@@ -28,11 +29,12 @@
 				<td class="text-center"><?= $no ?></td>
 				<td><?= $row->nomor_kk ?></td>
 				<td><?= $row->nik ?></td>
-				<td><?= $row->nama ?></td>
+				<td><?= $row->n_nama ?></td>
 				<td><?= $row->jenis_kelamin ?></td>
-				<td><?= $row->nama_kb ?></td>
-				<td><?= $row->rt_rw ?></td>
-				<td><?= $row->nama_ks ?></td>
+				<td><?= $row->tanggal_lahir ?></td>
+				<td><?= $row->n_nama_kb ?></td>
+				<td><?= $row->n_rt_rw ?></td>
+				<td><?= $row->n_nama_ks ?></td>
 				<td>
 					<div class="btn-group">
 						<a href="<?= site_url($url . '/form/ubah/' . $row->id_penduduk) ?>" class="btn btn-info"><i class="fa fa-edit"></i> Ubah</a>

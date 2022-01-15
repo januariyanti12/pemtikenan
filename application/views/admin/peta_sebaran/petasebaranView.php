@@ -28,7 +28,7 @@
                     '</b><br>NIK :' . $row['nik'] . '</b>' .
                     '</b><br>Jenis Kelamin :' . $row['jenis_kelamin'] . '</b>' .
                     '</b><br>Tanggal Lahir :' . $row['tanggal_lahir'] . '</b>' .
-                    '</b><br>Alamat :' . $row['alamat'] . '</b>' .
+                    // '</b><br>Alamat :' . $row['alamat'] . '</b>' .
                     '</b><br>Jenis KB :' . $row['nama_kb'] . '</b>' .
                     '</b><br>Jenis RT :' . $row['rt_rw'] . '</b>' .
                     '</b><br>Jenis KS :' . $row['nama_ks'] . '</b>' . '");
