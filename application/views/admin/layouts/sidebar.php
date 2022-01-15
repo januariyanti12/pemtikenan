@@ -45,7 +45,7 @@
              </li>
              <li><a><i class="fa fa-folder"></i> Kelola Data Keluarga Sejahtera<span class="fa fa-chevron-down"></span></a>
                <ul class="nav child_menu">
-               <li><a href="<?= site_url('admin/geografis') ?>">Data Geografis</a></li>
+                 <li><a href="<?= site_url('admin/geografis') ?>">Data Geografis</a></li>
                  <li><a href="<?= site_url('admin/kesejahteraan') ?>">Data Keluarga Sejahtera</a></li>
                  <li><a href="<?= site_url('admin/laporan_data') ?>">laporan Data</a></li>
                </ul>
@@ -58,6 +58,7 @@
            <?php } ?>
 
            <li><a href="<?= site_url('admin/auth/out') ?>"><i class="fa fa-sign-out"></i> Keluar</a></li>
+
          </ul>
        </div>
      </div>

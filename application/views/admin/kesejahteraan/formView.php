@@ -33,15 +33,10 @@ if ($this->session->flashdata('error_validation')) {
 	<?= input_hidden('id_penduduk', $id_penduduk) ?>
 	<label for="id_lokasi">Nama Penduduk</label>
 	<select name="id_lokasi">
-		<?php
-		$connections = mysqli_connect("localhost", "root", "", "datakeluargasejahtera");
-		//$link = mysqli_connect("localhost", "root", "", "test");
-		$query = mysqli_query($connections, "SELECT * FROM lokasi");
 
-		while ($qtabel = mysqli_fetch_assoc($query)) {
-			echo '<option value="' . $qtabel['id_lokasi'] . '">' . $qtabel['nama_penduduk'] . '</option>';
-		}
-		?>
+		<?php foreach ($lokasi as $l) : ?>
+			<option value="<?= $l['id_lokasi']; ?>"><?= $l['nama_penduduk']; ?></option>
+		<?php endforeach; ?>
 
 	</select>
 	<div class="form-group">

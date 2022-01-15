@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class pengguna_kb extends CI_Controller
+class Pengguna_kb extends CI_Controller
 {
 
     public function __construct()

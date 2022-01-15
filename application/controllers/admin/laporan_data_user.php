@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class laporan_data_user extends CI_Controller
+class Laporan_data_user extends CI_Controller
 {
 
     public function __construct()
@@ -51,7 +51,7 @@ class laporan_data_user extends CI_Controller
                 $validation[] = 'Pengguna Sudah Ada';
             }
             //tidak boleh kosong
-    
+
 
             if (count($validation) > 0) {
                 $this->session->set_flashdata('error_validation', $validation);
@@ -91,12 +91,13 @@ class laporan_data_user extends CI_Controller
         $this->Model->delete(["id_pengguna" => $id]);
         redirect('admin/laporan_data_user');
     }
-public function export($jenis='pdf'){
-    if($jenis=='pdf'){
-        $datacontent['title']='User Report';
-        $datacontent['datatable']=$this->Model->get();
-        $html=$this->load->view('admin/laporan_data_user/pdfView',$datacontent,TRUE);
-        generatePdf($html,'User','A4','landscape');
+    public function export($jenis = 'pdf')
+    {
+        if ($jenis == 'pdf') {
+            $datacontent['title'] = 'User Report';
+            $datacontent['datatable'] = $this->Model->get();
+            $html = $this->load->view('admin/laporan_data_user/pdfView', $datacontent, TRUE);
+            generatePdf($html, 'User', 'A4', 'landscape');
+        }
     }
-}
 }
