@@ -68,6 +68,7 @@ class Kesejahteraan extends CI_Controller
 				'nik' => $this->input->post('nik'),
 				'id_lokasi' => $this->input->post('id_lokasi'),
 				'jenis_kelamin' => $this->input->post('jenis_kelamin'),
+				'tanggal_lahir' => $this->input->post('tanggal_lahir'),
 				'id_jenis_kb' => $this->input->post('id_jenis_kb'),
 				'id_jenis_rt' => $this->input->post('id_jenis_rt'),
 				'id_jenis_ks' => $this->input->post('id_jenis_ks'),

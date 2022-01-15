@@ -68,7 +68,7 @@ if ($this->session->flashdata('error_validation')) {
 		<label>Tanggal Lahir</label>
 		<div class="row">
 			<div class="col-md-3">
-				<?= input_text('tanggal_lahir', $tanggal_lahir) ?>
+				<?= input_date('tanggal_lahir', $tanggal_lahir) ?>
 			</div>
 		</div>
 	</div>
