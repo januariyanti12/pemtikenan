@@ -2,7 +2,7 @@
 <a href="<?= site_url($url . '/form/tambah') ?>" class="btn btn-success"><i class="fa fa-plus"></i> Tambah</a>
 <hr>
 <?= $this->session->flashdata('info') ?>
-<table class="table table-bordered">
+<table class="table table-bordered table-responsive">
 	<thead>
 		<tr>
 			<th class="text-center" width="50px">No</th>

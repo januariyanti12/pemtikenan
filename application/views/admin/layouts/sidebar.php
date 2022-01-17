@@ -59,6 +59,7 @@
 
            <li><a href="<?= site_url('admin/auth/out') ?>"><i class="fa fa-sign-out"></i> Keluar</a></li>
 
+
          </ul>
        </div>
      </div>

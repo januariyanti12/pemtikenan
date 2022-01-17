@@ -12,7 +12,7 @@
         <h6 class="m-0 font-weight-bold text-primary"></h6>
     </div>
     <div class="card-body">
-        <img src="<?= templates('production/images/latar.jpg') ?>" alt="Image" height="800" width="1300">
+        <img src="<?= templates('production/images/latar.jpg') ?>" alt="Image" height="100%" width="100%">
     </div>
 
 </div>

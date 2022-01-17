@@ -7,7 +7,7 @@
     <center <div class="title_left">
         <h3><?= $title ?></h3>
     </center>
-    <div id="map" style="width: 1350px; height: 725px;"></div>
+    <div id="map" style="height: 480px;"></div>
     <script>
         var map = L.map('map').setView([-0.075819, 109.399202], 12);
 

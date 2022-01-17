@@ -3,7 +3,7 @@
 <hr>
 <?= $this->session->flashdata('info') ?>
 
-<table class="table table-bordered">
+<table class="table table-bordered table-responsive">
 	<thead>
 		<tr>
 			<th width="50px" class="text-center">No.</th>

@@ -17,7 +17,7 @@
         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 
           <ul class="nav navbar-nav menu_nav justify-content-end">
-            <li class="nav-item active"><a class="nav-link" href="<?= site_url('') ?>">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?= site_url('') ?>">Beranda</a></li>
             <li class="nav-item"><a class="nav-link" href="<?= site_url('website/berandauser') ?>">Informasi</a></li>
             <li class="nav-item"><a class="nav-link" href="<?= site_url('website/presentaseuser') ?>">Presentase</a></li>
             <li class="nav-item"><a class="nav-link" href="<?= site_url('website/leafletstandar') ?>">Peta Sebaran</a>

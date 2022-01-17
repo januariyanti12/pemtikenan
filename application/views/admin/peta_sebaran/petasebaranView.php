@@ -1,7 +1,8 @@
 <div class="page-title">
     <div class="title_left">
         <h3><?= $title ?></h3>
-        <div id="map" style="width: 1080px; height: 700px;"></div>
+        <div id="map" style="width: 1080px; height: 480px;"></div>
+
         <script>
             var map = L.map('map').setView([-0.075819, 109.399202], 12);
 
