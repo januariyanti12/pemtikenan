@@ -57,6 +57,27 @@
              </li>
            <?php } ?>
 
+           <?php if ($this->session->level == 'User') { ?>
+             <li><a><i class="fa fa-table"></i> Detail Data<span class="fa fa-chevron-down"></span></a>
+               <ul class="nav child_menu">
+                 <li><a href="<?= site_url('user/pengguna_kb') ?>">Data Pengguna Kb</a></li>
+               </ul>
+             </li>
+             <li><a><i class="fa fa-bar-chart-o"></i>Data Presentase<span class="fa fa-chevron-down"></span></a>
+               <ul class="nav child_menu">
+                 <li><a href="<?= site_url('user/presentase') ?>">Chart</a></li>
+               </ul>
+             </li>
+             <li><a><i class="fa fa-map-marker"></i>Peta Sebaran Keluarga Sejahtera Kel. Desa Kapur<span class="fa fa-chevron-down"></span></a>
+               <ul class="nav child_menu">
+                 <li><a href="<?= site_url('admin/peta') ?>">Peta</a></li>
+               </ul>
+             </li>
+
+
+           <?php } ?>
+
+
            <li><a href="<?= site_url('admin/auth/out') ?>"><i class="fa fa-sign-out"></i> Keluar</a></li>
 
 

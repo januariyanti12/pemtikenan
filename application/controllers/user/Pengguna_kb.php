@@ -10,7 +10,7 @@ class Pengguna_kb extends CI_Controller
         if ($this->session->logged !== true) {
             redirect('admin/auth');
         }
-        if ($this->session->level !== 'Admin') {
+        if ($this->session->level !== 'User') {
             redirect('admin/beranda');
         }
         $this->load->model('DataKBModel', 'Model');
@@ -18,16 +18,16 @@ class Pengguna_kb extends CI_Controller
 
     public function index()
     {
-        $datacontent['url'] = 'admin/pengguna_kb';
+        $datacontent['url'] = 'user/pengguna_kb';
         $datacontent['title'] = 'Halaman Data Pengguna KB';
         $datacontent['datatable'] = $this->Model->get_data();
-        $data['content'] = $this->load->view('admin/pengguna_kb/tableView', $datacontent, TRUE);
+        $data['content'] = $this->load->view('user/pengguna_kb/tableView', $datacontent, TRUE);
         $data['title'] = $datacontent['title'];
         $this->load->view('admin/layouts/html', $data);
     }
     public function form($parameter = '', $id = '')
     {
-        $datacontent['url'] = 'admin/pengguna_kb';
+        $datacontent['url'] = 'user/pengguna_kb';
         $datacontent['parameter'] = $parameter;
         $datacontent['id'] = $id;
         $datacontent['title'] = 'Form Data Pengguna KB';
@@ -35,7 +35,7 @@ class Pengguna_kb extends CI_Controller
         $datacontent['jenis_kb'] = $this->db->get('jenis_kb')->result_array();
         $datacontent['jenis_rt'] = $this->db->get('jenis_rt')->result_array();
 
-        $data['content'] = $this->load->view('admin/pengguna_kb/formView', $datacontent, TRUE);
+        $data['content'] = $this->load->view('user/pengguna_kb/formView', $datacontent, TRUE);
         $data['title'] = $datacontent['title'];
         $this->load->view('admin/layouts/html', $data);
     }
