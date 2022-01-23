@@ -1,8 +1,7 @@
 <?= content_open($title) ?>
-
 <hr>
 <?= $this->session->flashdata('info') ?>
-<table class="table table-bordered table-responsive">
+<table class="table table-bordered table-responsive" id="example">
     <thead>
         <tr>
             <th class="text-center" width="50px">No</th>
@@ -41,4 +40,5 @@
         ?>
     </tbody>
 </table>
+
 <?= content_close() ?>
