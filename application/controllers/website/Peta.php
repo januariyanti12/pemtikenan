@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Leafletstandar extends CI_Controller
+class Peta extends CI_Controller
 {
     public function __construct()
     {
@@ -11,10 +11,12 @@ class Leafletstandar extends CI_Controller
 
     public function index()
     {
-        $datacontent['url'] = 'leafletstandar';
-        $datacontent['title'] = 'Peta Sebaran Keluarga Sejahtera Kel.Desa Kapur';
+        $datacontent['url'] = 'peta';
+        $datacontent['title'] = 'Keluarga Sejahtera Kel.Desa Kapur';
+        // $datacontent['datatable'] = $this->Model->get_all_data();
         $datacontent['peta'] = $this->Model->get_peta()->result_array();
         $data['content'] = $this->load->view('website/petasebaranView', $datacontent, TRUE);
+        $data['js'] = $this->load->view('admin/leafletstandar/js/mapJs', $datacontent, TRUE);
         $data['title'] = $datacontent['title'];
         $this->load->view('website/layouts/html', $data);
     }

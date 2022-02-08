@@ -21,8 +21,23 @@ class Laporan_data extends CI_Controller
     {
         $datacontent['url'] = 'admin/laporan_data';
         $datacontent['title'] = 'Laporan Data Keseluruhan Keluarga Sejahtera';
-        $datacontent['datatable'] = $this->Model->get();
+        $datacontent['datatable'] = $this->Model->get_data();
         $data['content'] = $this->load->view('admin/laporan_data/tableView', $datacontent, TRUE);
+        $data['title'] = $datacontent['title'];
+        $this->load->view('admin/layouts/html', $data);
+    }
+    public function form($parameter = '', $id = '')
+    {
+        $datacontent['url'] = 'admin/laporan_data';
+        $datacontent['parameter'] = $parameter;
+        $datacontent['id'] = $id;
+        $datacontent['title'] = 'Laporan Data Keluarga Sejahtera';
+        $datacontent['lokasi'] = $this->db->get('lokasi')->result_array();
+        $datacontent['jenis_kb'] = $this->db->get('jenis_kb')->result_array();
+        $datacontent['jenis_rt'] = $this->db->get('jenis_rt')->result_array();
+        $datacontent['jenis_ks'] = $this->db->get('jenis_ks')->result_array();
+
+        $data['content'] = $this->load->view('admin/laporan_data/formView', $datacontent, TRUE);
         $data['title'] = $datacontent['title'];
         $this->load->view('admin/layouts/html', $data);
     }

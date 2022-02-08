@@ -1,6 +1,5 @@
 <?= content_open($title) ?>
 <a href="<?= site_url($url . '/form/tambah') ?>" class="btn btn-success"><i class="fa fa-plus"></i> Tambah</a>
-<a href="<?= site_url($url . '/export/pd') ?>" class="btn btn-danger" target="_BLANK"><i class="fa fa-file-pdf-o"></i> Unduh Data</a>
 
 <hr>
 <?= $this->session->flashdata('info') ?>

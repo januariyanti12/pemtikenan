@@ -33,9 +33,9 @@
                  <li><a href="<?= site_url('admin/pengguna_kb') ?>">Data Pengguna Kb</a></li>
                </ul>
              </li>
-             <li><a><i class="fa fa-bar-chart-o"></i>Data Presentase<span class="fa fa-chevron-down"></span></a>
+             <li><a><i class="fa fa-bar-chart-o"></i>Data Persentase<span class="fa fa-chevron-down"></span></a>
                <ul class="nav child_menu">
-                 <li><a href="<?= site_url('admin/presentase') ?>">Chart</a></li>
+                 <li><a href="<?= site_url('admin/Chart') ?>">Chart</a></li>
                </ul>
              </li>
              <li><a><i class="fa fa-map-marker"></i>Peta Sebaran Keluarga Sejahtera Kel. Desa Kapur<span class="fa fa-chevron-down"></span></a>
@@ -47,6 +47,7 @@
                <ul class="nav child_menu">
                  <li><a href="<?= site_url('admin/geografis') ?>">Data Geografis</a></li>
                  <li><a href="<?= site_url('admin/kesejahteraan') ?>">Data Keluarga Sejahtera</a></li>
+                 <li><a href="<?= site_url('admin/kuisioner') ?>">Kuisioner</a></li>
                  <li><a href="<?= site_url('admin/laporan_data') ?>">laporan Data</a></li>
                </ul>
              </li>
@@ -63,9 +64,9 @@
                  <li><a href="<?= site_url('user/pengguna_kb') ?>">Data Pengguna Kb</a></li>
                </ul>
              </li>
-             <li><a><i class="fa fa-bar-chart-o"></i>Data Presentase<span class="fa fa-chevron-down"></span></a>
+             <li><a><i class="fa fa-bar-chart-o"></i>Data Persentase<span class="fa fa-chevron-down"></span></a>
                <ul class="nav child_menu">
-                 <li><a href="<?= site_url('user/presentase') ?>">Chart</a></li>
+                 <li><a href="<?= site_url('user/chart') ?>">Chart</a></li>
                </ul>
              </li>
              <li><a><i class="fa fa-map-marker"></i>Peta Sebaran Keluarga Sejahtera Kel. Desa Kapur<span class="fa fa-chevron-down"></span></a>

@@ -1,9 +1,20 @@
 <?php
-defined('BASEPATH') or exit('No direct script access allowed');
 
-class LapdataModel extends CI_Model
+class KuisionerModel extends CI_ModeL
 {
-    function get_data()
+
+    public function insert_data($data)
+    {
+        $this->db->insert("t_kuisioner", $data);
+    }
+    public function fetch_data2()
+    {
+        //$query = $this->db->get("tbl_user");
+        $query = $this->db->query("SELECT * FROM pertanyaan ORDER BY id ASC");
+        return $query;
+    }
+
+    public function get_penduduk()
     {
         $data = $this->db->select('*, lokasi.nama_penduduk as n_nama, jenis_kb.nama_kb as n_nama_kb, jenis_ks.nama_ks as n_nama_ks, jenis_rt.rt_rw as n_rt_rw')
             ->from('penduduk')
@@ -12,11 +23,6 @@ class LapdataModel extends CI_Model
             ->join('jenis_rt', 'jenis_rt.id_jenis_rt = penduduk.id_jenis_rt')
             ->join('lokasi', 'lokasi.id_lokasi = penduduk.id_lokasi')
             ->get();
-        return $data;
-    }
-    function get()
-    {
-        $data = $this->db->get('penduduk');
         return $data;
     }
 }
